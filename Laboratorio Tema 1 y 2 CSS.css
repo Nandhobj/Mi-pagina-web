@@ -1,0 +1,213 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+header img {
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Enlaces */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de las secciones */
+section ul {
+    margin-left: 20px;
+}
+
+/* Datos personales */
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+/* Sección de habilidades */
+ul {
+    margin-left: 30px;
+}
+
+/* Pasatiempos */
+section ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Tareas pendientes */
+section ol li {
+    font-size: 1.1em;
+    color: #555;
+}
+
+section ol li::before {
+    content: counter(li) ". ";
+    counter-increment: li;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Tabla de horarios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+thead th {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+tbody td, thead th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tbody td {
+    color: #333;
+}
+
+/* Resaltado de tareas pendientes */
+tbody td:contains("Hacer oficio"),
+tbody td:contains("Estudiar inglés"),
+tbody td:contains("Preparar la prueba de Excel") {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Formulario de contacto */
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: #fff;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
